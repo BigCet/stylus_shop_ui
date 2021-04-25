@@ -1,0 +1,47 @@
+.home-collection-container{
+  .cards-container{
+    display: flex;
+    padding: 2rem;
+
+    .card{
+      width: 10rem;
+      height: 10rem;
+      border: 1px solid #ececec;
+      margin: 0.3rem;
+      background-color: #fcfcfc;
+      transition: background-color 0.3s;
+      color: #777777;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      img{
+        width: 80%;
+      }
+    }
+
+    .item-card{
+      border: none;
+      background-color: transparent;
+      align-items: flex-start;
+
+      .price{
+        color: black;
+        font-weight: 700;
+        margin-top: 1rem;
+      }
+
+      img{
+        align-self: center;
+      }
+
+      &:hover{
+        img{
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
